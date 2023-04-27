@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+i{
+    height: 2rem;
+    color: rgb(0, 76, 255);
+}
+#menu{
+    height: 100Vh;
+    width: 100%;
+    left: -100%;
+    transition: all 1s;
+}
+#menu a{
+    font-size: 0.6rem;
+}
+#menu.active{
+    left:0;
+}
+
+.main-bg{
+    background: url(../image/Rectangle\ 9.png) no-repeat center center / cover;
+}
+#main-left{
+    background: url(../image/desktop-vector.svg) no-repeat center center / cover;
+}
+#new-release p{
+    font-size: 0.7rem;
+}
+
+#album-bg{
+    background: url(../image/Lead-image.png) no-repeat center center / cover;
+}
+#album-hero{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+#col-1{
+    background: url(../image/Rectangle\ 26.png) no-repeat center center / cover;
+}
+#col-2{
+    background: url(../image/Rectangle\ 26\ \(3\).png) no-repeat center center / cover;
+}
+#col-3{
+    background: url(../image/Rectangle\ 26\ \(2\).png) no-repeat center center / cover;
+}
+#col-4{
+    background: url(../image/Rectangle\ 26\ \(1\).png) no-repeat center center / cover;
+}
+.play-bg{
+    background: linear-gradient(135deg, rgba(225, 225, 225, 0.06), rgba(225, 225, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: rgba(225, 225, 225, 0.18);
+}
+.range{
+    width: 40rem;
+    
+}
+
+@media screen and (max-width: 970px){
+    .range{
+        width: 20rem;
+    }
+    #col-1{
+        background: url(../image/Rectangle\ 26\ \(5\).png) no-repeat center center / cover;
+    }
+    #col-1:hover{
+        transform: scale(1.05);
+    }
+    #col-2{
+        background: url(../image/Rectangle\ 26\ \(6\).png) no-repeat center center / cover;
+    }
+    #col-2:hover{
+        transform: scale(1.05);
+    }
+    #col-3{
+        background: url(../image/Rectangle\ 26\ \(7\).png) no-repeat center center / cover;
+    }
+    #col-3:hover{
+        transform: scale(1.05);
+    }
+    #col-4{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    #main-left{
+        background: url(../image/mobile-vector.png) no-repeat center center / cover;
+       
+    }   
+    #charts{
+        display: grid;
+        grid-template-columns: repeat(3, 20rem);
+        width: 100%;
+        gap: 1.5rem;
+    }
+    
+}

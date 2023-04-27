@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://kit.fontawesome.com/8754cedc90.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Musica</title>
+</head>
+<body class="bg-bgColor">
+<div id="main">
+    <!-- Home -->
+    <div id="home">
+    <div class="relative container mx-auto">
+        <div id="sidebar" class="absolute flex flex-col items-center p-6">
+            <div class="flex space-x-6">
+                <button class="flex items-center md:hidden" id="open"><img src="./image/menu 1.svg" alt="" class="h-4"></button>
+            <a href="#">
+                <img src="./image/logo.svg" alt="">
+            </a>
+        </div>
+            <div class="hidden flex-col  space-y-6 my-6 rounded-3xl bg-black p-3 md:flex">
+                <a href="index.html">
+                    <img src="./image/Homee.svg" alt="">
+                </a>
+                <a href="collection.html">
+                    <img src="./image/playlist (1).svg" alt="" class="h-4">
+                </a>
+                <a href="#">
+                    <img src="./image/radio.svg" alt="" class="h-4">
+                </a>
+                <a href="https://jahsj">
+                    <img src="./image/videos.svg" alt="" class="h-4">
+                </a>
+            </div>
+
+            <div class="hidden flex-col  space-y-6 rounded-3xl bg-black p-3 md:flex">
+                <a href="#">
+                    <img src="./image/profile.svg" alt="" class="h-4">
+                </a>
+                <a href="#">
+                    <img src="./image/logoutt.svg" alt="" class="h-4">
+                </a>
+            </div>
+        </div>
+
+        <div id="search" class=" flex items-center justify-end space-x-8  p-7 md:ml-28 md:justify-start ">
+            <img src="./image/search.svg" alt="" class="h-5 md:h-4 cursor-pointer">
+            <span class="text-whitee hidden md:flex">Search artists</span>
+        </div>
+
+       
+        <!-- Mobile Menu -->
+
+        <div class="flex md:hidden">
+        <div id="menu" class="absolute flex flex-col items-start space-y-6 bg-bgColor pl-10 p-6">
+          
+            <a href="index.html" class="flex space-x-8 items-center  text-lightWhite"> <img src="/image/homee.svg" alt="" class="h-3"> <span>Home</span></a>
+            <a href="collection.html" class="flex space-x-8 items-center  text-whitee"> <img src="/image/playlist (1).svg" alt="" class="h-3"> <span>My collections</span></a>
+            <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/radio.svg" alt="" class="h-3"> <span>Radio</span></a>
+            <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/videos.svg" alt="" class="h-3"> <span>Music videos</span></a>
+            <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/profile.svg" alt="" class="h-3"> <span>Profile</span></a>
+            <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/logoutt.svg" alt="" class="h-3"> <span>Logout</span></a>
+        </div>
+        </div>
+
+        <!-- Home -->
+      <div id="home-main" class="m-6 md:mx-0 flex flex-col space-y-10 space-x-0 md:ml-28 lg:flex-row lg:space-y-0 lg:space-x-10">
+        <section class="main-bg rounded-xl lg:w-3/5">
+        <div id="main-left" class="flex flex-col md:flex-row">
+            <div class="main-words flex flex-col p-4 items-start justify-between space-y-12">
+            <small  class="text-lightWhite">Curated playlists</small>
+            <div class="pt-32 md:pt-0">
+                <h2 class="font-bold text-2xl text-white">R & B Hits</h2>
+                <p class="text-lightWhite text-sm pr-36 mt-4">All mine, Lie again, Petty call me everyday,
+                    Out of time, No love, Bad habit,
+                    and so much more</p>
+            </div>
+            <div class="pictures flex space-x-6 items-center">
+                <img src="./image/pictures.png" alt="">
+                <img src="./image/main-heart.svg" alt="">
+                <p class="text-1xl text-white">33K Likes</p>
+            </div>
+            </div>
+
+            <div class="main-img hidden md:flex">
+                <img src="./image/Pexels Photo by Eric Esma.png" alt="" class="w-96">
+            </div>
+        </div>
+        </section>
+
+        <section id="main-right" class="lg:w-2/5">
+            <h2 class="text-xl font-bold text-white md:-mt-2">Top charts</h2>
+
+            <div id="charts" class="flex flex-col space-y-0 md:space-y-2 mt-2 overflow-x-scroll md:overflow-x-auto">
+
+                <div id="chart" class="flex justify-between items-start md:items-center md:space-x-0 bg-black rounded-lg p-4 md:p-2   md:w-auto" onclick="window.location.href='album.html';">
+                    <div class="flex flex-col space-y-2 space-x-0 md:space-x-6 md:space-y-0 md:flex-row">
+                        <div>
+                        <img src="./image/Rectangle 17 (1).png" alt="" class="h-14 w-14">
+                        </div>
+                        <div>
+                            <h3 class="text-sm text-white">Golden age of 80's</h3>
+                            <p class="text-sm text-whitee">Sean swadder</p>
+                            <p class="text-sm text-lightWhite mt-2">2:24:45</p>
+                        </div>
+                    </div>
+                    <div class="border border-yellow rounded-full p-2">
+                        <img src="./image/Heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="chart" class="flex justify-between items-start md:items-center md:space-x-0 bg-black rounded-lg p-2 md:w-auto" onclick="window.location.href='album.html';">
+                    <div class="flex flex-col space-y-2 space-x-0 md:space-x-6 md:space-y-0 md:flex-row">
+                        <div>
+                        <img src="./image/Rectangle 17 (2).png" alt="" class="h-14 w-14">
+                        </div>
+                        <div>
+                            <h3 class="text-sm text-white">Raggae "n" blues</h3>
+                            <p class="text-sm text-whitee">Dj YK mule</p>
+                            <p class="text-sm text-lightWhite mt-2">1:02:42</p>
+                        </div>
+                    </div>
+                    <div class="border border-yellow rounded-full p-2">
+                        <img src="./image/Heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="chart" class="flex justify-between items-start md:items-center md:space-x-0 bg-black rounded-lg p-2 md:w-auto" onclick="window.location.href='album.html';">
+                    <div class="flex flex-col space-y-2 space-x-0 md:space-x-6 md:space-y-0 md:flex-row">
+                        <div>
+                        <img src="./image/Rectangle 17 (3).png" alt="" class="h-14 w-14">
+                        </div>
+                        <div>
+                            <h3 class="text-sm text-white">Tomorrow's tunes</h3>
+                            <p class="text-sm text-whitee">Obi datti</p>
+                            <p class="text-sm text-lightWhite mt-2">2:01:25</p>
+                        </div>
+                    </div>
+                    <div class="border border-yellow rounded-full p-2">
+                        <img src="./image/Heart.svg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    </div>
+
+      <section id="release" class="swiper m-4">
+        <h2 class="text-xl font-bold text-white mb-8">Top charts</h2>
+        <div id="new-releases" class="swiper-wrapper">
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 14.png" alt="" class="h-28 rounded-md">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+            
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 15.png" alt="" class="h-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 17.png" alt="" class="h-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 19.png" alt="" class="h-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 20.png" alt="" class="h-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 26.png" alt="" class="h-28 w-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 26 (1).png" alt="" class="h-28 w-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 26 (3).png" alt="" class="h-28 w-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+
+            <div id="new-release" class="swiper-slide">
+                <img src="./image/Rectangle 26 (2).png" alt="" class="h-28 w-28 rounded-2xl">
+                <p class="text-lightWhite mt-1">Life in a bubble</p>
+            </div>
+            
+        </div>
+      </section>
+
+    </div>
+          
+    <section id="play" class=" relative">
+        <div class="play-bg z-50 fixed bottom-0 flex items-center justify-between pl-8 py-3 pr-8 w-full md:pl-24 lg:pl-32">
+        <div class="flex flex-col">
+            <img src="./image/Rectangle 26 (1).png" alt="" class="w-14 rounded-xl">
+            <p class="text-sm text-white">Seasons In</p>
+            <small class="text-whitee ">James</small>
+        </div>
+
+        <div class="hidden flex-col justify-center items-center space-y-4 md:flex">
+              <div class="flex space-x-4 items-center mb-2">
+                <img src="./image/shuffle.svg" class="h-5 hover:cursor-pointer">
+                <img src="./image/previous.svg" class="h-5 hover:cursor-pointer">
+                <i class="fa-solid fa-play"></i>
+                <img src="./image/next.svg" class="h-5 hover:cursor-pointer">
+                <img src="./image/repeate-one.svg" class="h-5 hover:cursor-pointer">
+              </div>
+              <input type="range" name="" min="0" max="100" class="range h-1 outline-yellow">
+        </div>
+
+        <div class="hidden space-x-4 items-center md:flex">
+            <img src="./image/volume-high.svg" alt="" class="">
+            <input type="range" name="" class="rang h-1 text-yellow">
+      </div>
+
+      <div class="flex md:hidden items-center space-x-1">
+        <img src="./image/Play.svg" class="h-8 hover:cursor-pointer ">
+                <img src="./image/next.svg" class="h-5 hover:cursor-pointer">
+      </div>
+    </div>
+    </section>
+    </div>
+
+
+
+    <script src="/main.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+ const swiper = new Swiper('.swiper', {
+  // Default parameters
+  slidesPerView: 6,
+  spaceBetween: 100,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 7,
+      spaceBetween: 20
+    }
+  }
+})
+
+    </script>
+
+</body>
+</html>

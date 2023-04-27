@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Musica</title>
+</head>
+<body class="bg-bgColor">
+    <!-- Collection -->
+        <div id="collection">
+            <div id="sidebar" class="absolute flex flex-col items-center p-6">
+                <div class="flex space-x-6">
+                    <button class="flex items-center md:hidden" id="open"><img src="./image/menu 1.svg" alt="" class="h-4"></button>
+                <a href="#">
+                    <img src="./image/logo.svg" alt="">
+                </a>
+            </div>
+                <div class="hidden flex-col  space-y-6 my-6 rounded-3xl bg-black p-3 md:flex">
+                    <a href="index.html">
+                        <img src="./image/Home.svg" alt="">
+                    </a>
+                    <a href="collection.html">
+                        <img src="./image/playlist.svg" alt="" class="h-4">
+                    </a>
+                    <a href="#">
+                        <img src="./image/radio.svg" alt="" class="h-4">
+                    </a>
+                    <a href="#">
+                        <img src="./image/videos.svg" alt="" class="h-4">
+                    </a>
+                </div>
+    
+                <div class="hidden flex-col  space-y-6 rounded-3xl bg-black p-3 md:flex">
+                    <a href="#">
+                        <img src="./image/profile.svg" alt="" class="h-4">
+                    </a>
+                    <a href="#">
+                        <img src="./image/logoutt.svg" alt="" class="h-4">
+                    </a>
+                </div>
+            </div>
+            
+            <div id="search" class=" flex items-center justify-end space-x-8  p-7 md:ml-28 md:justify-start ">
+                <img src="./image/search.svg" alt="" class="h-5 md:h-4 cursor-pointer">
+                <span class="text-whitee hidden md:flex">Search artists</span>
+            </div>
+    
+           
+            <!-- Mobile Menu -->
+    
+            <div class="flex md:hidden">
+            <div id="menu" class="absolute flex flex-col items-start space-y-6 bg-bgColor pl-10 p-6">
+              
+                <a href="index.html" class="flex space-x-8 items-center  text-lightWhite"> <img src="/image/Home.svg" alt="" class="h-3"> <span>Home</span></a>
+                <a href="collection.html" class="flex space-x-8 items-center  text-whitee"> <img src="/image/playlist.svg" alt="" class="h-3"> <span>My collections</span></a>
+                <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/radio.svg" alt="" class="h-3"> <span>Radio</span></a>
+                <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/videos.svg" alt="" class="h-3"> <span>Music videos</span></a>
+                <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/profile.svg" alt="" class="h-3"> <span>Profile</span></a>
+                <a href="#" class="flex space-x-8 items-center  text-whitee"> <img src="/image/logoutt.svg" alt="" class="h-3"> <span>Logout</span></a>
+            </div>
+            </div>
+
+            <!-- Collection -->
+            <div id="collection" class="p-6 md:ml-32">
+                <div class="flex justify-between items-center mt-4 md:justify-start md:space-x-6">
+                    <div class="rounded-full bg-yellow px-8 py-2 text-sm md:px-4">My Collections</div>
+                    <div class="rounded-full px-14 py-2 border border-lightWhite text-lightWhite text-sm md:px-6">Likes</div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mt-10">
+                    <div class="hover:scale-110 grid rounded-xl p-4 h-40 md:h-60 lg:h-40" id="col-1">
+                        <div class="pt-12 md:p-0 md:self-end">
+                            <p class="text-2xl text-lightWhite md:text-sm">Limits</p>
+                            <p class="text-xs text-whitee">John von</p>
+                        </div>
+                        <div class="md:hidden flex justify-between items-center">
+                            <p class="text-xs text-whitee">28m Likes</p>
+                            <img src="./image/Play 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hover:scale-110 grid rounded-xl p-4 h-40 md:h-60 lg:h-40" id="col-2">
+                        <div class="pt-12 md:p-0 md:self-end">
+                            <p class="text-2xl text-lightWhite md:text-sm">Limits</p>
+                            <p class="text-xs text-whitee">John von</p>
+                        </div>
+                        <div class="md:hidden flex justify-between items-center">
+                            <p class="text-xs text-whitee">8.7m Likes</p>
+                            <img src="./image/Play 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hover:scale-110 grid rounded-xl p-4 h-40 md:h-60 lg:h-40" id="col-3">
+                        <div class="pt-12 md:p-0 md:self-end">
+                            <p class="text-2xl text-lightWhite md:text-sm">Limits</p>
+                            <p class="text-xs text-whitee">John von</p>
+                        </div>
+                        <div class="md:hidden flex justify-between items-center">
+                            <p class="text-xs text-whitee">12.3k Likes</p>
+                            <img src="./image/Play 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="hover:scale-110 grid rounded-xl p-4 h-40 md:h-60 lg:h-40" id="col-4">
+                        <div class="self-end">
+                            <p class="text-2xl text-lightWhite md:text-sm">Limits</p>
+                            <p class="text-xs text-whitee pl-2 md:pl-0">John von</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <section id="play" class=" relative">
+                <div class="play-bg z-50 fixed bottom-0 flex items-center justify-between pl-8 py-3 pr-8 w-full md:pl-24 lg:pl-32">
+                <div class="flex flex-col">
+                    <img src="./image/Rectangle 26 (1).png" alt="" class="w-14 rounded-xl">
+                    <p class="text-sm text-white">Seasons In</p>
+                    <small class="text-whitee ">James</small>
+                </div>
+        
+                <div class="hidden flex-col justify-center items-center space-y-4 md:flex">
+                      <div class="flex space-x-4 items-center mb-2">
+                        <img src="./image/shuffle.svg" class="h-5 hover:cursor-pointer">
+                        <img src="./image/previous.svg" class="h-5 hover:cursor-pointer">
+                        <img src="./image/Play.svg" class="h-10 hover:cursor-pointer ">
+                        <img src="./image/next.svg" class="h-5 hover:cursor-pointer">
+                        <img src="./image/repeate-one.svg" class="h-5 hover:cursor-pointer">
+                      </div>
+                      <input type="range" name="" min="0" max="100" class="range h-1 outline-yellow">
+                </div>
+        
+                <div class="hidden space-x-4 items-center md:flex">
+                    <img src="./image/volume-high.svg" alt="" class="">
+                    <input type="range" name="" class="rang h-1 text-yellow">
+              </div>
+        
+              <div class="flex md:hidden items-center space-x-1">
+                <img src="./image/Play.svg" class="h-8 hover:cursor-pointer ">
+                        <img src="./image/next.svg" class="h-5 hover:cursor-pointer">
+              </div>
+            </div>
+            </section>
+        </div>
+<script src="/main.js"></script>
+</body>
+</html>
